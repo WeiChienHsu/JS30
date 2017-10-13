@@ -1,0 +1,47 @@
+body{
+	background-image: url("http://static-media.fxx.com/img/FX_Networks_-_FXX/887/903/TheSimpsons_TABF11_1280x720_430425155986.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box{
+	margin-left: 100px;
+	margin-top: 150px;
+
+}
+
+
+
+.key{
+	border: 4px solid black;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	transition:all 0.47s;
+	width:140px;
+	height: 140px;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.4);
+	text-shadow: 0 0 5px black;
+	display: inline-block;
+	margin-top: 30px;
+	padding-top: 40px;
+	margin-left: 10px;
+}
+
+.playing{
+	transform: scale(1.4);
+	border-color:#ffc600;
+	box-shadow: 0 0 10px #ffc600;
+}
+
+kbd{
+	display: block;
+	font-size: 40px;
+}
+
+.sound{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
