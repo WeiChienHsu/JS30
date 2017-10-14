@@ -14,7 +14,7 @@ function setData(){
 	//minute
 
 	const hour = now.getHours();
-	const hourDegree = ((hour/48)*360)+90;
+	const hourDegree = (((hour%12)/12)*360)+90;
 	hourHand.style.transform = `rotate(${hourDegree}deg)`;
 	console.log(hour);
 	//hour
