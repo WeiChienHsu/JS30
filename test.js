@@ -1,12 +1,24 @@
-var size = 10;
-
-list = '#'+" ";
-list1 = " "+'#';
-
-for (var i = 1; i <= size; i++){
-	if(i%2 !== 0){
-		console.log(list.repeat(size/2));
-	} else{
-		console.log(list1.repeat(size/2));
-	}
+function solve(grades){
+    if (grades < 38){
+        return grades;
+    } while(grades%10 != 0){
+        if(grades%10 > 5){ //66,67,68,69
+            if(grades%5 > 2){ //68,69
+                grades ++;
+            } else{ //66 67
+                grades --;
+            } 
+        } // >5
+        else if(grades % 10 < 5){ //61,62,63,64
+            if(grades%5 > 2){
+                grades ++;
+            } else{
+                grades --;
+            }
+        }
+    } // while
+    
+    return grades; //60,65,70,75
 }
+
+solve(67);
