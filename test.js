@@ -27,9 +27,7 @@ function solve(grades){
             }
         }
         return grades; //60,65,70,75
-     }
-    // } // while
-    
+     }  
     
 }
 
