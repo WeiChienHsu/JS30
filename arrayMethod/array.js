@@ -54,8 +54,23 @@ console.log(oldest);
 // find the key words in a website
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-const category = document.querySelector('.mw-category');
-const lists = Array.from(category.querySelectorAll('a'));
-const de = lists.map(link => link.textContent).filter(streetName => streetName.includes('de'));
-console.log(de);
+// const category = document.querySelector('.mw-category');
+// const lists = Array.from(category.querySelectorAll('a'));
+// const de = lists.map(link => link.textContent).filter(streetName => streetName.includes('de'));
+// console.log(de);
 
+
+// Reduce
+// Sum up the instance of each of these
+const data = ['car','car','car','car','car','car','car','car','walk','walk','walk','walk','walk','truck','truck','truck','truck'];
+
+const transportation = data.reduce(function(obj,item){
+	if(!obj[item]){
+		obj[item] = 0;
+	}
+	obj[item] ++;
+	return obj;
+},{})
+
+
+console.log(transportation);
