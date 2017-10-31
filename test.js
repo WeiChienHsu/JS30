@@ -31,4 +31,4 @@ function solve(grades){
     
 }
 
-console.log(solve(67));
+console.log(solve(60));
